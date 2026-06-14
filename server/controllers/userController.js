@@ -1,4 +1,3 @@
-import { useImperativeHandle } from "react";
 import { generateToken } from "../lib/utlis.js";
 import User from "../models/User.js";
 import bcrypt from "bcryptjs";
@@ -10,7 +9,8 @@ export const signup = async (req, res) => {
 
     try {
         // Check required fields
-        if (!fullName || !email || !password || !bio) {
+        if (!fullName || !email || !password || !bio) {git add .
+
             return res.json({
                 success: false,
                 message: "Missing Details"
