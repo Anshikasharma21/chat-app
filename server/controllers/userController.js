@@ -9,8 +9,7 @@ export const signup = async (req, res) => {
 
     try {
         // Check required fields
-        if (!fullName || !email || !password || !bio) {git add .
-
+        if (!fullName || !email || !password || !bio) {
             return res.json({
                 success: false,
                 message: "Missing Details"
